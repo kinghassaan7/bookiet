@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(36, 50, 90);
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.element-bar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 2%;
+}
+
+.element-bar > a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    flex: 1; /* Let the logo take up available space */
+    text-align: center; /* Center-align the logo */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.socials {
+    margin-right: 1.7%;
+    font-size: 20px;
+    gap: 8px;
+    color: white;
+    display: flex; /* Keep social icons always visible */
+}
+
+a:hover {
+    background: rgb(65, 96, 183);
+    transition: .5s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(36, 50, 90);
+    min-width: 140px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(65, 96, 183);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width: 1030px) {
+    .socials {
+        margin-right: 2%; /* Add margin between social icons and cart-nav */
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .cart-nav {
+        margin-right: 12%; /* Adjust margin for cart-nav */
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .element-bar > a {
+        display: none;
+    }
+    .checkbtn {
+        display: flex;
+        position: relative;
+    }
+    .drop-down-btn {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        min-width: 100px;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .socials {
+        font-size: 15px;
+        gap: 7px;
+        display: none;
+    }
+    .cart-nav{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 380px) {
+    .logo {
+        font-size: 25px;
+    }
+}
+
+.cart-nav {
+    display: flex;
+    color: #fff;
+    margin-right: 3%;
+}
+
+#cart-logo {
+    font-size: 25px;
+}
+
+#cart {
+    font-size: 20px;
+}
