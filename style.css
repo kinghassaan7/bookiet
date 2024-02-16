@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Strike&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
     box-sizing: border-box;
 }
 
 nav {
-    background-color: rgb(36, 50, 90);
+    background-color: rgb(60, 140, 154);
     height: 85px;
     display: flex;
     align-items: center;
@@ -28,13 +41,21 @@ nav {
 }
 
 .logo {
-    flex: 1; /* Let the logo take up available space */
-    text-align: center; /* Center-align the logo */
+    flex: 1;
+    text-align: center;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px; /* Adjust the font size as per your preference */
+    margin-left: 10px; /* Adjust the margin as per your preference */
+    font-family: "Protest Strike", sans-serif;
+    margin-left: 4%;
+}
+
+.logo > img{
+    width: 130px;
+    height: 65px;
 }
 
 .socials {
@@ -42,7 +63,7 @@ nav {
     font-size: 20px;
     gap: 8px;
     color: white;
-    display: flex; /* Keep social icons always visible */
+    display: flex;
 }
 
 a:hover {
@@ -90,13 +111,13 @@ a:hover {
 
 @media only screen and (max-width: 1030px) {
     .socials {
-        margin-right: 2%; /* Add margin between social icons and cart-nav */
+        margin-right: 2%;
     }
 }
 
 @media only screen and (max-width: 915px) {
     .cart-nav {
-        margin-right: 12%; /* Adjust margin for cart-nav */
+        margin-right: 12%;
     }
 }
 
@@ -132,16 +153,6 @@ a:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 380px) {
     .logo {
         font-size: 25px;
@@ -160,4 +171,170 @@ a:hover {
 
 #cart {
     font-size: 20px;
+}
+
+.main{
+    flex-wrap: wrap;
+}
+
+.about {
+    margin-left: 1.5%;
+    color: #1f8eca; /* Blue color for "about" */
+    font-family: "Poppins", sans-serif; /* Font family for "about" */
+}
+
+.description{
+    margin-top: 3%;
+    font-size: 30px;
+}
+
+.description, .points p {
+    color: #333; /* Dark gray color for paragraphs */
+    font-family: "Open Sans", sans-serif; /* Font family for paragraphs */
+}
+
+.points {
+    margin-top: 3%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.points .point i {
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.points .point:hover i {
+    color: #1f8eca; /* Change color to blue on hover */
+}
+
+.points .point {
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.points .point:hover {
+    transform: translateY(-5px); /* Move the element slightly up on hover */
+}
+
+.delivery, .secure, .package, .guarantee {
+    margin-top: 3.5%;
+}
+
+.delivery, .secure, .package > p , .guarantee{
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.delivery, .package, .secure-content ,.guarantee {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.point > i {
+    font-size: 25px;
+}
+
+
+#sp1{
+    margin-left: 38px;
+    display: flex;
+}
+
+.secure-content {
+    display: flex;
+    align-items: center;
+}
+
+.secure-content > p {
+    font-size: 18px;
+}
+
+.secure-content > i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ddbf85;
+    width: 400px;
+    height: 75%; /* Change height to auto */
+    align-items: center; /* Center align items horizontally */
+    border-radius: 7px;
+}
+
+#header-login {
+    color: #333;
+    font-weight: 700;
+    margin-top: 7%;
+}
+
+.login-details {
+    margin-top: 3%; /* Add margin to separate from login header */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.login-details > input{
+    margin-top: 3%;
+    width: 170%;
+    padding: 20px;
+    border: transparent;
+    font-family: 'Poppins';
+    font-size: 600;
+    background-color: rgba(183, 111, 86, 0.165);
+    opacity: 0.6;
+}
+
+.p-details{
+    margin-right: 134%;
+    margin-top: 15%;
+    font-size: 14px;
+    color: #342626;
+    text-transform: capitalize;
+}
+
+.forget{
+    display: flex;
+    margin-left: 156%;
+    width: 200px;
+}
+
+#forget{
+    font-size: small;
+}
+
+#button{
+    margin-top: 7%;
+    text-align: center;
+    padding: 4px;
+    padding: 14px 120px;
+    border-radius: 30px;
+    border: transparent;
+    background-color: rgba(193, 111, 83, 0.511);
+    font-family: 'Poppins';
+    font-size: medium;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+#button:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+    color: #912c0d;
+}
+
+.p-details{
+    transition: 0.3s;
+}
+
+.p-details:hover{
+    transition: 0.3s;
+    transform: translateY(2px);
 }
