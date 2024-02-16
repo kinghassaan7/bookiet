@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookie</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-     <div class="main">
+    <div class="main">
         <nav>
             <div class="element-bar">
                 <div class="dropdown">
-                    <!-- <label for="checkbox" class="checkbtn">
-                        <i class="fas fa-bars"></i> Change to bars icon
-                    </label> -->
                     <div class="drop-down-btn">
-                       <button class="dropbtn">Genres <i class="fas fa-caret-down"></i></button>
+                        <button class="dropbtn">
+                            Genres <i class="fas fa-caret-down"></i>
+                        </button>
                     </div>
                     <div class="dropdown-content">
                         <a href="#">Self-Help</a>
@@ -24,10 +23,9 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="logo">
-                <p>Bookie&nbsp; </p>
-                <i class="fa-solid fa-book"></i>
+             <img id="logo" src="bookie logo for hasss.png" alt="">
             </div>
             <div class="socials">
                 <i class="fa-brands fa-facebook"></i>
@@ -40,17 +38,47 @@
                 <p id="cart">Cart</p>
             </div>
         </nav>
-     </div>
-
-     <script>
-     document.addEventListener("DOMContentLoaded", function() {
-        const dropdowns = document.querySelectorAll(".dropdown");
-    
-        dropdowns.forEach(function(dropdown) {
-            dropdown.addEventListener("click", function() {
-                this.querySelector(".dropdown-content").classList.toggle("active");
-            });
-        });
-    });</script>
+        <div class="main">
+            <div class="about">
+                <div class="description">
+                    <p id="about-des1">"Explore endless literary wonders,</p>
+                    <p id="about-des2"> &nbsp;at our online bookstore"</p>
+                </div>
+                <div class="points">
+                    <div class="delivery point">
+                        <i class="fa-solid fa-truck"></i> <p>Delivery span is upto 3 days.</p>
+                    </div>
+                    <div class="package point">
+                        <i class="fa-solid fa-box-open"></i> <p>Books are securely packaged from any damage.</p>
+                    </div>
+                    <div class="secure point">
+                        <div class="secure-content">
+                            <i class="fa-solid fa-phone"></i>
+                            <p id="sp2">For any issues and queries</p>
+                        </div>
+                        <p id="sp1">Can contact with customer support team,</p>
+                    </div>
+                    <div class="guarantee point">
+                        <i class="fa-solid fa-square-check"></i><p>Refund of Books are accepted.</p>
+                    </div>     
+                </div>
+            </div>
+            <div class="login">
+                <h1 id="header-login">Login</h1>
+                <div class="login-details">
+                        <p class="p-details" id="u">username</p>
+                          <input id="username" type="text" placeholder="Type your username">
+                        <p class="p-details">password</p>
+                        <input type="password" placeholder="Type your password">
+                        <div class="forget">
+                           <p id="forget">Forgot Password?</p>
+                        </div>
+                </div>
+                <div class="button">
+                    <button id="button">Login</button>
+                 </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
